@@ -17,27 +17,20 @@ namespace Skocko
         PictureBox[] pogadjaj = new PictureBox[24]; //Generise nas input //our input
         int[] dobitna = new int[24];
 
-        private void generisiRandomZnakove(int[] n) // <== Generise random kombianciju // Creates a random combination
+        private static void generisiRandomZnakove(int[] n) // <== Generise random kombianciju // Creates a random combination
         {
-            int br = 0;
             Random r = new Random();
-            for(int i = 0; i < 4; i++)  //1 tref -- 2 pik -- 3 herc -- 4 karo //1 clover -- 2 fuck it -- 3 heats -- 4 diamounds
+            for (int i = 0; i < 4; i++)  //1 tref -- 2 pik -- 3 herc -- 4 karo //1 clover -- 2 fuck it -- 3 heats -- 4 diamounds
             {
                 n[i] = r.Next(1, 5);
-                MessageBox.Show($"{n[i]}");
+                MessageBox.Show(n[i].ToString());
             }
+            int br = 0;
 
-            for(int i = 4; i < 24; i++) //So i don't go out of bounds, it copies the combiantion
-            {                           //from 0-3 indekes to all others till 23
-                if(br % 4 == 0)         //da uhvatim exception, uzima dobitnu kombinaciju i baca je za svaki "red"
-                {
-                    br = 0;
-                }
-                else
-                {
-                    n[i] = n[br];
-                    br++;
-                }
+            for (int i = 4; i < 24; i++)
+            {
+                if (br == 4) { br = 0; n[i] = n[br]; br++; }
+                else { n[i] = n[br]; br++; }
             }
         }
 
@@ -79,7 +72,7 @@ namespace Skocko
         private int logika(int pocni, int zavrsi)
         {
             int br = pocni;
-            for (int i = pocni; i < zavrsi; i++)
+            for (int i = pocni; i <= zavrsi; i++)
             {
                 if (tvoja[i] == dobitna[i])//same index == same position == good
                 {//Ako su po istom indeksu onda su ista pozicija i stavi crveno
@@ -88,7 +81,7 @@ namespace Skocko
                     tvoja[i] = 0;
                     br++;
                 }
-                for (int j = pocni; j < zavrsi; j++)//same but no in good positions
+                for (int j = pocni; j <= zavrsi; j++)//same but not in good positions
                 {//ako su isti al' ne na dobrim pozicijama
                     if ((tvoja[i] == dobitna[j]) && (tvoja[i] != 0))
                     {
@@ -105,23 +98,23 @@ namespace Skocko
         {
             switch (brojac)
             {
-                case 4:
-                    if(logika(0, 4) == 4) { MessageBox.Show("Tacno!"); this.Close(); }
+                case 3:
+                    if(logika(0, 4) == 3) { MessageBox.Show("Tacno!"); this.Close(); }
                     break;
-                case 8:
-                    if (logika(4, 8) == 8) { MessageBox.Show("Tacno!"); this.Close(); }
+                case 7:
+                    if (logika(4, 8) == 7) { MessageBox.Show("Tacno!"); this.Close(); }
                     break;
-                case 12:
-                    if (logika(8, 12) == 12) { MessageBox.Show("Tacno!"); this.Close(); }
+                case 11:
+                    if (logika(8, 12) == 11) { MessageBox.Show("Tacno!"); this.Close(); }
                     break;
-                case 16:
-                    if (logika(12, 16) == 16) { MessageBox.Show("Tacno!"); this.Close(); }
+                case 15:
+                    if (logika(12, 16) == 15) { MessageBox.Show("Tacno!"); this.Close(); }
                     break;
-                case 20:
-                    if (logika(16, 20) == 20) { MessageBox.Show("Tacno!"); this.Close(); }
+                case 19:
+                    if (logika(16, 20) == 19) { MessageBox.Show("Tacno!"); this.Close(); }
                     break;
-                case 24:
-                    if (logika(20, 24) == 24) { MessageBox.Show("Tacno!"); this.Close(); }
+                case 23:
+                    if (logika(20, 24) == 23) { MessageBox.Show("Tacno!"); this.Close(); }
                     break;
             }
         }
@@ -136,7 +129,7 @@ namespace Skocko
         {
             try
             {
-                if (brojac % 4 == 0)
+                if (brojac == 3 || brojac == 7 || brojac == 11 || brojac == 15 || brojac == 19 || brojac == 23)
                 {
                     proveri(brojac);
                     pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/clubs_24px.png");
@@ -157,7 +150,7 @@ namespace Skocko
         {
             try
             {
-                if (brojac % 4 == 0)
+                if (brojac == 3 || brojac == 7 || brojac == 11 || brojac == 15 || brojac == 19 || brojac == 23)
                 {
                     proveri(brojac);
                     pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/spades_26px.png");
@@ -178,7 +171,7 @@ namespace Skocko
         {
             try
             {
-                if (brojac % 4 == 0)
+                if (brojac == 3 || brojac == 7 || brojac == 11 || brojac == 15 || brojac == 19 || brojac == 23)
                 {
                     proveri(brojac);
                     pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/hearts_48px.png");
@@ -199,7 +192,7 @@ namespace Skocko
         {
             try
             {
-                if (brojac % 4 == 0)
+                if (brojac == 3 || brojac == 7 || brojac == 11 || brojac == 15 || brojac == 19 || brojac == 23)
                 {
                     proveri(brojac);
                     pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/diamonds_48px.png");
