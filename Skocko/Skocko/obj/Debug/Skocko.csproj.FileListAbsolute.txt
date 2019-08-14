@@ -1,0 +1,10 @@
+D:\Code\C#\Skocko\Skocko\bin\Debug\Skocko.exe.config
+D:\Code\C#\Skocko\Skocko\bin\Debug\Skocko.exe
+D:\Code\C#\Skocko\Skocko\bin\Debug\Skocko.pdb
+D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.csprojAssemblyReference.cache
+D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.Form1.resources
+D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.Properties.Resources.resources
+D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.csproj.GenerateResource.cache
+D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.csproj.CoreCompileInputs.cache
+D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.exe
+D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.pdb
