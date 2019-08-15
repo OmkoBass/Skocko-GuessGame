@@ -17,7 +17,8 @@ namespace Skocko
         PictureBox[] boje = new PictureBox[24]; //Generise da znamo crvena i zuta pogadjanja //hit or near miss
         PictureBox[] pogadjaj = new PictureBox[24]; //Generise nas input //our input
         int[] dobitna = new int[24];
-        string s = null;
+        string s = null; //String Combination //String kombinacija
+        int br = 0; //Timer seconds
 
         private static void generisiRandomZnakove(int[] n) // <== Generise random kombianciju // Creates a random combination
         {
@@ -62,6 +63,12 @@ namespace Skocko
 
         public Form1()
         {
+
+            timer1 = new System.Windows.Forms.Timer();
+            timer1.Interval = 1000; // interval = 1 sec
+            timer1.Tick += new EventHandler(Timer1_Tick);
+            timer1.Enabled = true;
+
             InitializeComponent();
             generisiRandomZnakove(dobitna);
             s = getDobitna();
@@ -94,6 +101,12 @@ namespace Skocko
                 else { horizontalp += 63; }
                 this.Controls.Add(pogadjaj[i]);
             }
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            if (br == 60) { MessageBox.Show($"Nestalo je vremena\n{s}"); this.Close(); }
+            else { progress.Value = br; br += 1; }
         }
 
         private int logika(int pocni, int zavrsi)
@@ -249,7 +262,5 @@ namespace Skocko
             }
             catch { MessageBox.Show(s); this.Close(); }
         }
-
-        
     }
 }

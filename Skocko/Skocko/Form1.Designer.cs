@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tref = new System.Windows.Forms.PictureBox();
             this.pik = new System.Windows.Forms.PictureBox();
             this.herc = new System.Windows.Forms.PictureBox();
             this.karo = new System.Windows.Forms.PictureBox();
+            this.progress = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.klik = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tref)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.herc)).BeginInit();
@@ -82,19 +86,42 @@
             this.karo.TabStop = false;
             this.karo.Click += new System.EventHandler(this.Karo_Click);
             // 
+            // progress
+            // 
+            this.progress.Location = new System.Drawing.Point(12, 466);
+            this.progress.Name = "progress";
+            this.progress.Size = new System.Drawing.Size(747, 23);
+            this.progress.TabIndex = 4;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // klik
+            // 
+            this.klik.AutoSize = true;
+            this.klik.Font = new System.Drawing.Font("Fira Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.klik.Location = new System.Drawing.Point(562, 68);
+            this.klik.Name = "klik";
+            this.klik.Size = new System.Drawing.Size(197, 33);
+            this.klik.TabIndex = 5;
+            this.klik.Text = "Klikni znakove";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(771, 459);
+            this.ClientSize = new System.Drawing.Size(771, 501);
+            this.Controls.Add(this.klik);
+            this.Controls.Add(this.progress);
             this.Controls.Add(this.tref);
             this.Controls.Add(this.pik);
             this.Controls.Add(this.herc);
             this.Controls.Add(this.karo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(787, 498);
+            this.MaximumSize = new System.Drawing.Size(787, 540);
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Skocko";
@@ -103,6 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.herc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.karo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -112,6 +140,9 @@
         private System.Windows.Forms.PictureBox herc;
         private System.Windows.Forms.PictureBox pik;
         private System.Windows.Forms.PictureBox tref;
+        private System.Windows.Forms.ProgressBar progress;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label klik;
     }
 }
 

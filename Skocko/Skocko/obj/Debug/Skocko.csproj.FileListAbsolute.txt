@@ -18,3 +18,13 @@ C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\
 C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.csproj.CoreCompileInputs.cache
 C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.exe
 C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.pdb
+D:\Git\Skocko-GuessGame\Skocko\Skocko\bin\Debug\Skocko.exe.config
+D:\Git\Skocko-GuessGame\Skocko\Skocko\bin\Debug\Skocko.exe
+D:\Git\Skocko-GuessGame\Skocko\Skocko\bin\Debug\Skocko.pdb
+D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.csprojAssemblyReference.cache
+D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.Form1.resources
+D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.Properties.Resources.resources
+D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.csproj.GenerateResource.cache
+D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.csproj.CoreCompileInputs.cache
+D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.exe
+D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.pdb
