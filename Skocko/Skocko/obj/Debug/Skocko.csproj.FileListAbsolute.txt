@@ -8,3 +8,13 @@ D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.csproj.GenerateResource.cache
 D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.csproj.CoreCompileInputs.cache
 D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.exe
 D:\Code\C#\Skocko\Skocko\obj\Debug\Skocko.pdb
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\bin\Debug\Skocko.exe.config
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\bin\Debug\Skocko.exe
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\bin\Debug\Skocko.pdb
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.csprojAssemblyReference.cache
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.Form1.resources
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.Properties.Resources.resources
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.csproj.GenerateResource.cache
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.csproj.CoreCompileInputs.cache
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.exe
+C:\Users\dpepi\Downloads\Skocko-GuessGame-master\Skocko-GuessGame-master\Skocko\Skocko\obj\Debug\Skocko.pdb

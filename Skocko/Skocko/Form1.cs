@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Skocko
 {
@@ -72,9 +73,10 @@ namespace Skocko
         private int logika(int pocni, int zavrsi)
         {
             int br = pocni;
-            for (int i = pocni; i <= zavrsi; i++)
+            for (int i = pocni; i < zavrsi; i++)
             {
-                if (tvoja[i] == dobitna[i])//same index == same position == good
+                Debug.Print($"dobitna{dobitna[i]} --- tvoja{tvoja[i]}");
+               if (tvoja[i] == dobitna[i])//same index == same position == good
                 {//Ako su po istom indeksu onda su ista pozicija i stavi crveno
                     boje[br].BackColor = Color.Red;
                     dobitna[i] = 0; 
@@ -131,14 +133,15 @@ namespace Skocko
             {
                 if (brojac == 3 || brojac == 7 || brojac == 11 || brojac == 15 || brojac == 19 || brojac == 23)
                 {
-                    proveri(brojac);
-                    pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/clubs_24px.png");
+                    
+                    pogadjaj[brojac].Image = Image.FromFile(@"Resources/clubs_24px.png");
                     tvoja[brojac] = 1;
+                    proveri(brojac);
                     brojac++;
                 }
                 else
                 {
-                    pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/clubs_24px.png");
+                    pogadjaj[brojac].Image = Image.FromFile(@"Resources/clubs_24px.png");
                     tvoja[brojac] = 1;
                     brojac++;
                 }
@@ -152,14 +155,15 @@ namespace Skocko
             {
                 if (brojac == 3 || brojac == 7 || brojac == 11 || brojac == 15 || brojac == 19 || brojac == 23)
                 {
-                    proveri(brojac);
-                    pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/spades_26px.png");
+              
+                    pogadjaj[brojac].Image = Image.FromFile(@"Resources/spades_26px.png");
                     tvoja[brojac] = 2;
+                    proveri(brojac);
                     brojac++;
                 }
                 else
                 {
-                    pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/spades_26px.png");
+                    pogadjaj[brojac].Image = Image.FromFile(@"Resources/spades_26px.png");
                     tvoja[brojac] = 2;
                     brojac++;
                 }
@@ -173,14 +177,15 @@ namespace Skocko
             {
                 if (brojac == 3 || brojac == 7 || brojac == 11 || brojac == 15 || brojac == 19 || brojac == 23)
                 {
-                    proveri(brojac);
-                    pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/hearts_48px.png");
+                  
+                    pogadjaj[brojac].Image = Image.FromFile(@"Resources/hearts_48px.png");
                     tvoja[brojac] = 3;
+                    proveri(brojac);
                     brojac++;
                 }
                 else
                 {
-                    pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/hearts_48px.png");
+                    pogadjaj[brojac].Image = Image.FromFile(@"Resources/hearts_48px.png");
                     tvoja[brojac] = 3;
                     brojac++;
                 }
@@ -194,14 +199,15 @@ namespace Skocko
             {
                 if (brojac == 3 || brojac == 7 || brojac == 11 || brojac == 15 || brojac == 19 || brojac == 23)
                 {
-                    proveri(brojac);
-                    pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/diamonds_48px.png");
+                
+                    pogadjaj[brojac].Image = Image.FromFile(@"Resources/diamonds_48px.png");
                     tvoja[brojac] = 4;
+                    proveri(brojac);
                     brojac++;
                 }
                 else
                 {
-                    pogadjaj[brojac].Image = Image.FromFile(@"D:/Code/C#/Skocko/Skocko/Resources/diamonds_48px.png");
+                    pogadjaj[brojac].Image = Image.FromFile(@"Resources/diamonds_48px.png");
                     tvoja[brojac] = 4;
                     brojac++;
                 }
