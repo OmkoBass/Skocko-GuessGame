@@ -105,8 +105,8 @@ namespace Skocko
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            if (br == 60) { timer1.Enabled = false; MessageBox.Show($"Nestalo je vremena\n{s}"); this.Close(); }
-            else { progress.Value = br; br += 1; }
+            if (br == 60) { br = 0; MessageBox.Show($"Nestalo je vremena\n{s}"); this.Close(); }
+            else { br += 1; progress.Value = br; }
         }
 
         private int logika(int pocni, int zavrsi)
@@ -145,22 +145,22 @@ namespace Skocko
             switch (brojac)
             {
                 case 3:
-                    if(logika(0, 4) == 4) { timer1.Enabled = false; MessageBox.Show("Tacno!"); this.Close(); }
+                    if(logika(0, 4) == 4) { br = 0; MessageBox.Show("Tacno!"); this.Close(); }
                     break;
                 case 7:
-                    if (logika(4, 8) == 8) { timer1.Enabled = false; MessageBox.Show("Tacno!"); this.Close(); }
+                    if (logika(4, 8) == 8) { br = 0; MessageBox.Show("Tacno!"); this.Close(); }
                     break;
                 case 11:
-                    if (logika(8, 12) == 12) { timer1.Enabled = false; MessageBox.Show("Tacno!"); this.Close(); }
+                    if (logika(8, 12) == 12) { br = 0; MessageBox.Show("Tacno!"); this.Close(); }
                     break;
                 case 15:
-                    if (logika(12, 16) == 16) { timer1.Enabled = false; MessageBox.Show("Tacno!"); this.Close(); }
+                    if (logika(12, 16) == 16) { br = 0; MessageBox.Show("Tacno!"); this.Close(); }
                     break;
                 case 19:
-                    if (logika(16, 20) == 20) { timer1.Enabled = false; MessageBox.Show("Tacno!"); this.Close(); }
+                    if (logika(16, 20) == 20) { br = 0; MessageBox.Show("Tacno!"); this.Close(); }
                     break;
                 case 23:
-                    if (logika(20, 24) == 24) { timer1.Enabled = false; MessageBox.Show("Tacno!"); this.Close(); }
+                    if (logika(20, 24) == 24) { br = 0; MessageBox.Show("Tacno!"); this.Close(); }
                     break;
             }
         }
@@ -177,7 +177,6 @@ namespace Skocko
             {
                 if (brojac == 3 || brojac == 7 || brojac == 11 || brojac == 15 || brojac == 19 || brojac == 23)
                 {
-                    
                     pogadjaj[brojac].Image = Image.FromFile(@"Resources/clubs_24px.png");
                     tvoja[brojac] = 1;
                     proveri(brojac);

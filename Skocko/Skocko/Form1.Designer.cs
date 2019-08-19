@@ -89,6 +89,7 @@
             // progress
             // 
             this.progress.Location = new System.Drawing.Point(12, 466);
+            this.progress.Maximum = 60;
             this.progress.Name = "progress";
             this.progress.Size = new System.Drawing.Size(747, 23);
             this.progress.TabIndex = 4;
