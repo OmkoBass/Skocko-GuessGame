@@ -28,3 +28,13 @@ D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.csproj.GenerateResource.c
 D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.csproj.CoreCompileInputs.cache
 D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.exe
 D:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.pdb
+C:\Git\Skocko-GuessGame\Skocko\Skocko\bin\Debug\Skocko.exe.config
+C:\Git\Skocko-GuessGame\Skocko\Skocko\bin\Debug\Skocko.exe
+C:\Git\Skocko-GuessGame\Skocko\Skocko\bin\Debug\Skocko.pdb
+C:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.csprojAssemblyReference.cache
+C:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.Form1.resources
+C:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.Properties.Resources.resources
+C:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.csproj.GenerateResource.cache
+C:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.csproj.CoreCompileInputs.cache
+C:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.exe
+C:\Git\Skocko-GuessGame\Skocko\Skocko\obj\Debug\Skocko.pdb

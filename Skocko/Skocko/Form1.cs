@@ -63,19 +63,21 @@ namespace Skocko
 
         public Form1()
         {
+            InitializeComponent();
 
             timer1 = new System.Windows.Forms.Timer();
-            timer1.Interval = 1000; // interval = 1 sec
+            timer1.Interval = 1000; // 1000 interval = 1 sec
             timer1.Tick += new EventHandler(Timer1_Tick);
             timer1.Enabled = true;
 
-            InitializeComponent();
             generisiRandomZnakove(dobitna);
             s = getDobitna();
+
             int horizontalb = 280;
             int verticalb = 15;
             int horizontalp = 15;
             int verticalp = 15;
+
             for(int i = 0; i < 24; i++)
             {
                 boje[i] = new PictureBox();
